@@ -69,8 +69,8 @@ const messages = document.getElementById('messages');
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 let name = 'Проходил мимо...';
-
-const ws = new WebSocket('ws://localhost:3000');
+var HOST = location.origin.replace(/^http/, 'ws')
+var ws = new WebSocket(HOST);
 
 
 
